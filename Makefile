@@ -34,6 +34,7 @@ serve: ## Serve Quartz locally
 	hugo server --enableGitInfo --minify --bind=$(or $(HUGO_BIND),0.0.0.0) --baseURL=$(or $(URL),http://localhost) --port=$(or $(HUGO_PORT),1313) --appendPort=$(or $(HUGO_APPENDPORT),true) --liveReloadPort=$(or $(HUGO_LIVERELOADPORT),-1)
 
 gh_rebuild:
+	${GOPATH}/bin/hugo-obsidian -input=content -output=assets/indices -index -root=.
 	hugo --gc --minify --baseURL=`echo "${CODESPACE_NAME}-1313.preview.app.github.dev"`
 
 gh_dev:
