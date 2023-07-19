@@ -19,7 +19,8 @@ update-force: ## Forcefully pull all changes and don't ask to patch
 	hugo version
 	git remote show upstream || (echo "remote 'upstream' not present, setting 'upstream'" && git remote add upstream https://github.com/jackyzha0/quartz.git)
 	git fetch upstream
-	git log --oneline --decorate --graph ..upstream/hugo
+#	git log --oneline --decorate --graph ..upstream/hugo
+	git shortlog --max-count 5	
 	git checkout -p upstream/hugo -- layouts assets/js assets/styles/base.scss assets/styles/darkmode.scss
 #	git clone https://github.com/josephhutch/aether.git themes/aether
 	git shortlog --max-count 5
@@ -31,6 +32,12 @@ update-force: ## Forcefully pull all changes and don't ask to patch
 
 serve: ## Serve Quartz locally
 	hugo server --enableGitInfo --minify --bind=$(or $(HUGO_BIND),0.0.0.0) --baseURL=$(or $(URL),http://localhost) --port=$(or $(HUGO_PORT),1313) --appendPort=$(or $(HUGO_APPENDPORT),true) --liveReloadPort=$(or $(HUGO_LIVERELOADPORT),-1)
+
+gh_rebuild:
+	hugo --gc --minify --baseURL=`echo "${CODESPACE_NAME}-1313.preview.app.github.dev"`
+
+gh_dev:
+	hugo server --disableFastRender --gc --minify --baseURL=`echo "${CODESPACE_NAME}-1313.preview.app.github.dev"` --bind=0.0.0.0 --appendPort=False --liveReloadPort=-1
 
 docker: ## Serve locally using Docker
 	docker run -it --volume=$(shell pwd):/quartz -p 1313:1313 ghcr.io/jackyzha0/quartz:hugo
