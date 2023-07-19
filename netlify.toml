@@ -3,7 +3,7 @@
 # command = "hugo --gc --minify"
 # command = "./netlify-build.sh"
 command = "make update-force"
-publish = "./public"
+publish = "public"
 
 [context.production.environment]
 HUGO_VERSION = "0.115.3"
