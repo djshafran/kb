@@ -23,8 +23,9 @@ update-force: ## Forcefully pull all changes and don't ask to patch
 	git checkout -p upstream/hugo -- layouts assets/js assets/styles/base.scss assets/styles/darkmode.scss config.toml data
 	git shortlog --max-count 5
 	${GOPATH}/bin/hugo-obsidian -input=content -output=assets/indices -index -root=.
-	hugo --gc --minify
-	ls -laR .
+	hugo --gc --minify --baseURL=$(or $(DEPLOY_PRIME_URL),http://localhost)
+#	ls -laR .
+	find . -type f -not -path ".git"
 # git remote show upstream || (echo "remote 'upstream' not present, setting 'upstream'" && git remote add upstream https://github.com/djshafran/kb.git)
 # git fetch upstream
 # git checkout upstream/hugo -- layouts .github Makefile assets/js assets/styles/base.scss assets/styles/darkmode.scss config.toml data
