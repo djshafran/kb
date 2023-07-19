@@ -8,7 +8,7 @@ apk add --no-cache go hugo git make perl
 go env
 go install github.com/jackyzha0/hugo-obsidian@latest
 
-#PATH="/root/go/bin:$PATH"
+PATH="$GOPATH/bin:$PATH"
 #git clone https://github.com/djshafran/kb /quartz
 
 #WORKDIR /quartz
