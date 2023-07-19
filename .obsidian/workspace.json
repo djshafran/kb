@@ -13,8 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/_index.md",
-                "mode": "source",
+                "file": "content/12_фаз/20. Методика/__i. Формализация.md",
+                "mode": "preview",
+                "backlinks": true,
                 "source": false
               }
             }
@@ -48,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#i_Формализация",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/12_фаз/20. Методика/__i. Формализация.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/12_фаз/20. Методика/__i. Формализация.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/_index.md"
+                "file": "content/12_фаз/20. Методика/__i. Формализация.md"
               }
             }
           }
@@ -146,6 +148,13 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "b2f7f30e66028181",
-  "lastOpenFiles": []
+  "active": "6a6d56ce47f87c25",
+  "lastOpenFiles": [
+    "content/12_фаз/20. Методика/_ii. Проектирование.md",
+    "screenshot.png",
+    "content/12_фаз/20. Методика/_index.md",
+    "content/private/private-note.md",
+    "content/templates/post.md",
+    "content/_index.md"
+  ]
 }

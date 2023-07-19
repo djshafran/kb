@@ -1,1 +1,11 @@
-{}
+{
+  "obsidian-toggle-meta-yaml-plugin:obsidian-toggle-meta-yaml-toggle": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ]
+}

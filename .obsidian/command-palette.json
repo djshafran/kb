@@ -1,0 +1,7 @@
+{
+  "pinned": [
+    "obsidian-toggle-meta-yaml-plugin:obsidian-toggle-meta-yaml-toggle",
+    "obsidian-linter:lint-file",
+    "obsidian-linter:lint-all-files-in-folder"
+  ]
+}
