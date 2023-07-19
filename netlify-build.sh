@@ -15,4 +15,3 @@ PATH="$GOPATH/bin:$PATH"
 
 make help 
 # make update-force
-make serve
