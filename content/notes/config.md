@@ -70,19 +70,14 @@ search:
 
 # page description used for SEO
 description:
-  Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
-  Wikilink support, backlinks, local graph, tags, and link previews.
+  Комплексный подход к организации и управлению разработкой в BigData-проектах
 
 # title of the home page (also for SEO)
 page_title:
-  "🪴 Quartz 3.3"
-
-# links to show in the footer
+  "🔠 12 фаз гармонизации разработки"
 links:
-  - link_name: Twitter
-    link: https://twitter.com/_jzhao
-  - link_name: Github
-    link: https://github.com/jackyzha0
+  - link_name: Telegram
+    link: https://t.me/PetaFlops
 ```
 
 ### Code Block Titles
