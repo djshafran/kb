@@ -21,7 +21,7 @@ update-force: ## Forcefully pull all changes and don't ask to patch
 	git fetch upstream
 	git log --oneline --decorate --graph ..upstream/hugo
 	git checkout -p upstream/hugo -- layouts assets/js assets/styles/base.scss assets/styles/darkmode.scss
-	git clone https://github.com/josephhutch/aether.git themes/aether
+#	git clone https://github.com/josephhutch/aether.git themes/aether
 	git shortlog --max-count 5
 	${GOPATH}/bin/hugo-obsidian -input=content -output=assets/indices -index -root=.
 	hugo --gc --minify --baseURL=$(or $(DEPLOY_PRIME_URL),http://localhost)
