@@ -3,7 +3,7 @@
     <h1 id="page-title"><a class="root-title" href="{{ "" | absLangURL }}">{{ ( index $.Site.Data $config ).page_title | default $.Site.Data.config.page_title }}</a></h1>
     <div class="spacer"></div>
 
-    {{ if {{if $.Site.Data.config.search.enabled}} }}
+    {{if $.Site.Data.config.search.enabled}}
     <div id="search-icon">
     {{end}}
 
