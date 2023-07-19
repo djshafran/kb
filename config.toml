@@ -1,6 +1,7 @@
 baseURL = "http://petaflops.guru"
 theme = "aether"
 languageCode = "ru"
+DefaultContentLanguage = "ru"
 relativeURLs = false
 disablePathToLower = true
 ignoreFiles = [
