@@ -62,4 +62,4 @@ other = "Search for something..."
 other = "Содержание"
 
 [copyright]
-other = "Сделано {{ .name }} на базе <a href=\"https://github.com/jackyzha0/quartz\">Quartz</a>, © {{ .year }}"
+other = "Сделал {{ .name }}. На базе <a href=\"https://github.com/jackyzha0/quartz\">Quartz</a>, © {{ .year }}"
