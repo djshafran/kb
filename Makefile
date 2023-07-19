@@ -18,6 +18,7 @@ update-force: ## Forcefully pull all changes and don't ask to patch
 	go install github.com/jackyzha0/hugo-obsidian@latest
 	hugo version
 	${GOPATH}/bin/hugo-obsidian -input=content -output=assets/indices -index -root=.
+	hugo --minify
 	ls -la
 # git remote show upstream || (echo "remote 'upstream' not present, setting 'upstream'" && git remote add upstream https://github.com/djshafran/kb.git)
 # git fetch upstream
