@@ -15,7 +15,7 @@
   # publish = "build-output/"
 
   # Default build command.
-  command = "./netlify-build.sh"
+  command = "make help && make update-force && make serve"
 
 [[plugins]]
   # Installs the Lighthouse Build Plugin for all deploy contexts
