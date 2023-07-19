@@ -13,6 +13,8 @@ update: ## Update Quartz to the latest version on Github
 
 update-force: ## Forcefully pull all changes and don't ask to patch
 	which go
+	go install -tags extended github.com/gohugoio/hugo@latest
+	hugo version
 	go install github.com/jackyzha0/hugo-obsidian@latest
 	git remote show upstream || (echo "remote 'upstream' not present, setting 'upstream'" && git remote add upstream https://github.com/djshafran/kb.git)
 	git fetch upstream
