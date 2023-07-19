@@ -24,6 +24,7 @@ update-force: ## Forcefully pull all changes and don't ask to patch
 	git shortlog --max-count 5
 	${GOPATH}/bin/hugo-obsidian -input=content -output=assets/indices -index -root=.
 	hugo --gc --minify --baseURL=$(or $(DEPLOY_PRIME_URL),http://localhost)
+	
 	find . -type f -not -path ".git"
 
 serve: ## Serve Quartz locally
