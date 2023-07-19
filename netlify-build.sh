@@ -9,6 +9,7 @@ go env
 go install github.com/jackyzha0/hugo-obsidian@latest
 
 PATH="$GOPATH/bin:$PATH"
+exit 0
 #git clone https://github.com/djshafran/kb /quartz
 
 #WORKDIR /quartz
