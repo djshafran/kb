@@ -30,7 +30,7 @@
   # publish = "output/"
   # command = "make publish"
   # environment = { NODE_VERSION = "14.15.3" }
-  environment = { GO_VERSION = "1.20.6" }
+  environment = { GO_VERSION = "1.16" }
 
 # Deploy Preview context: all deploys generated from
 # a pull/merge request will inherit these settings.
