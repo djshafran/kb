@@ -19,8 +19,7 @@ update-force: ## Forcefully pull all changes and don't ask to patch
 	hugo version
 	${GOPATH}/bin/hugo-obsidian -input=content -output=assets/indices -index -root=.
 	hugo --minify
-	hugo
-	ls -la
+	ls -lar assets
 # git remote show upstream || (echo "remote 'upstream' not present, setting 'upstream'" && git remote add upstream https://github.com/djshafran/kb.git)
 # git fetch upstream
 # git checkout upstream/hugo -- layouts .github Makefile assets/js assets/styles/base.scss assets/styles/darkmode.scss config.toml data
