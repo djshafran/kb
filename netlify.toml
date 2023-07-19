@@ -16,7 +16,7 @@ HUGO_VERSION = "0.115.3"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-comand = "make serve"
+comand = "make update-force && make serve"
 #command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]

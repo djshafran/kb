@@ -13,5 +13,5 @@ PATH="$GOPATH/bin:$PATH"
 
 #WORKDIR /quartz
 
-make help 
+# make help 
 # make update-force
