@@ -1,7 +1,8 @@
 [build]
-publish = "public"
+
 # command = "hugo --gc --minify"
 command = "./netlify-build.sh"
+publish = "public"
 
 [context.production.environment]
 HUGO_VERSION = "0.115.3"
@@ -16,7 +17,7 @@ HUGO_VERSION = "0.115.3"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-comand = "make update-force && make serve"
+comand = "make serve"
 #command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
