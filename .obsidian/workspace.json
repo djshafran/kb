@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "content/_index.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -149,11 +149,11 @@
   },
   "active": "b2f7f30e66028181",
   "lastOpenFiles": [
+    "content/12 фаз/Методика/Формализация.md",
+    "content/_index.md",
     "content/12 фаз/Контакт/Телеграм.md",
     "content/12 фаз/Контакт/telegram_qrcode.png",
-    "content/_index.md",
     "12.md",
-    "content/12 фаз/Методика/Формализация.md",
     "content/12 фаз/Методика/Проектирование.md",
     "content/notes/method/xops.md",
     "content/templates/post.md",
