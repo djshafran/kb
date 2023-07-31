@@ -2,6 +2,7 @@
 {{ $config := cond (eq $.Site.Language.Lang "en") "config" (printf "config.%s" $.Site.Language.Lang) }}
 {{ $data := index $.Site.Data $config }}
 <head>
+  {{partial "yandex_metrics.html" .}}
   <!-- Meta tags -->
   <meta charset="UTF-8" />
   <meta
