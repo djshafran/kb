@@ -1,4 +1,4 @@
-baseURL = "http://petaflops.guru"
+baseURL = "http://petaflops.guru/"
 theme = "aether"
 languageCode = "ru"
 DefaultContentLanguage = "ru"
