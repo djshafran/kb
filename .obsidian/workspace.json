@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/12_фаз/20. Методика/__i. Формализация.md",
+                "file": "content/_index.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -66,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/12_фаз/20. Методика/__i. Формализация.md",
+                "file": "content/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/12_фаз/20. Методика/__i. Формализация.md",
+                "file": "content/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/12_фаз/20. Методика/__i. Формализация.md"
+                "file": "content/_index.md"
               }
             }
           }
@@ -148,13 +147,35 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "6a6d56ce47f87c25",
+  "active": "b2f7f30e66028181",
   "lastOpenFiles": [
+    "content/12 фаз/Контакт/Телеграм.md",
+    "content/12 фаз/Контакт/telegram_qrcode.png",
+    "content/_index.md",
+    "12.md",
+    "content/12 фаз/Методика/Формализация.md",
+    "content/12 фаз/Методика/Проектирование.md",
+    "content/notes/method/xops.md",
+    "content/templates/post.md",
+    "content/notes_old/20.Методика/_index.md",
+    "content/12 фаз/Контакт/telegram-icon-blue-angle.png",
+    "content/12 фаз/Контакт",
+    "content/12 фаз/Методика",
+    "content/12 фаз",
+    "content/notes/method",
+    "assets/indices/linkIndex.json",
+    "assets/indices/contentIndex.json",
+    "content/12_фаз/20.Методика/(ii).Проектирование.md",
+    "12_фаз/20.Методика/(ii). Проектирование.md",
+    "content/12_фаз/20.Методика/(i).Формализация.md",
+    "12_фаз/20.Методика",
+    "12_фаз",
+    "content/12_фаз/20.Методика/_index.md",
+    "content/12_фаз/20. Методика/__i. Формализация.md",
+    "content/12_фаз/20.Методика",
     "content/12_фаз/20. Методика/_ii. Проектирование.md",
     "screenshot.png",
     "content/12_фаз/20. Методика/_index.md",
-    "content/private/private-note.md",
-    "content/templates/post.md",
-    "content/_index.md"
+    "content/private/private-note.md"
   ]
 }
