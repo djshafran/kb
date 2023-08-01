@@ -66,7 +66,6 @@ enableToc: true
 		<tr>
 			<td>D. Обновления</td>
 		</tr>
-
 	</tbody>
 </table>
 
