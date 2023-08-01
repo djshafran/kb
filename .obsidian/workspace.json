@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/12 фаз/Методика/Кодирование.md",
+                "file": "content/_index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/12 фаз/Методика/Кодирование.md",
+                "file": "content/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/12 фаз/Методика/Кодирование.md",
+                "file": "content/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/12 фаз/Методика/Кодирование.md"
+                "file": "content/_index.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "b2f7f30e66028181",
   "lastOpenFiles": [
+    "content/12 фаз/Методика/Кодирование.md",
     "content/_index.md",
     "content/12 фаз/Методика/Сборка.md",
     "content/12 фаз/Методика/Испытания.md",
@@ -159,7 +160,6 @@
     "content/12 фаз/Методика/Обучение.md",
     "content/12 фаз/Методика/Отзывы.md",
     "content/12 фаз/Методика/Формализация.md",
-    "content/12 фаз/Методика/Кодирование.md",
     "content/12 фаз/Методика/Планирование.md",
     "content/12 фаз/Методика/Проектирование.md",
     "layouts/partials/yandex_metrics.html",

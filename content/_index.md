@@ -28,9 +28,48 @@ enableToc: true
 |xi|[[12 фаз/Методика/Обучение\|Обучение]]|обучаем пользователей|
 |xii|[[12 фаз/Методика/Отзывы\|Отзывы]]|собираем и ранжируем отзывы|
 
-## Самодиагностика
+## Самодиагностика конкурентноспособности
+
+Конкурентных преимущества всего 3. Это способность делать:
+- дешевле
+- быстрее
+- лучше
 
 Провести высокоуровневую оценку состояния производственной части разработки ПО можно с помощью 6-ти критериев (A-F).
+
+<table>
+	<thead>
+		<tr>
+			<th>Фактор</th>
+			<th>Критерии</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowspan=2><b>Цена</b> создания и владения</td>
+			<td>A. Задачи</td>
+		</tr>
+		<tr>
+			<td>F. Перспективы</td>
+		</tr>
+		<tr>
+			<td rowspan=2><b>Скорость</b> решения</td>
+			<td>B. Сроки </td>
+		</tr>
+		<tr>
+			<td>E. Реакция</td>
+		</tr>
+		<tr>
+			<td rowspan=2><b>Качество</b> изменений</td>
+			<td>C. Качество</td>
+		</tr>
+		<tr>
+			<td>D. Обновления</td>
+		</tr>
+
+	</tbody>
+</table>
+
 Каждый критерий является отражением состояния пары фаз производственно-технологического процесса. Например у вас:
 
 > [!success]➕ А. Задачи ясные
@@ -53,7 +92,7 @@ enableToc: true
         <tr>
             <td rowspan=2>A. Задачи</td>
             <td>➕ Ясные</td>
-            <td rowspan=2 >[[tags/Формализация|i. Формализация]]<br>[[tags/Проектирование|ii. Проектирование]]</td>
+            <td rowspan=2 ><nobr>[[tags/Формализация|i. Формализация]]</nobr><br><nobr>[[tags/Проектирование|ii. Проектирование]]</nobr></td>
         </tr>
         <tr>
             <td>➖Нерешаемые</td>
@@ -61,7 +100,7 @@ enableToc: true
         <tr>
             <td rowspan=2>B. Сроки</td>
             <td>➕Точные</td>
-            <td rowspan=2 >iii.Планирование<br>iv.Кодирование</td>
+            <td rowspan=2 ><nobr>[[tags/Планирование|iii. Планирование]]</nobr><br><nobr>[[tags/Кодирование|iv. Кодирование]]</nobr></td>
         </tr>
         <tr>
             <td>➖Размытые</td>
@@ -69,7 +108,7 @@ enableToc: true
         <tr>
             <td rowspan=2>C. Качество</td>
             <td>➕Высокое</td>
-            <td rowspan=2 >v.Сборка<br>vi.Испытания</td>
+            <td rowspan=2 ><nobr>[[tags/Сборка|v. Сборка]]</nobr><br><nobr>[[tags/Испытания|vi. Испытания]]</nobr></td>
         </tr>
         <tr>
             <td>➖Низкое</td>
@@ -77,7 +116,7 @@ enableToc: true
 		<tr>
             <td rowspan=2>D. Обновления</td>
             <td>➕Частые</td>
-            <td rowspan=2 >vii.Выпуск<br>iix.Доставка</td>
+            <td rowspan=2 ><nobr>[[tags/Выпуск|vii. Выпуск]]</nobr><br><nobr>[[tags/Доставка|iix. Доставка]]</nobr></td>
         </tr>
         <tr>
             <td>➖Редкие</td>
@@ -85,7 +124,7 @@ enableToc: true
         <tr>
             <td rowspan=2>E. Реагирование</td>
             <td>➕Упреждающее</td>
-            <td rowspan=2 >ix.Мониторинг<br>x.Эксплуатация</td>
+            <td rowspan=2 ><nobr>[[tags/Эксплуатация|ix. Эксплуатация]]</nobr><br><nobr>[[tags/Мониторинг|x. Мониторинг]]</nobr></td>
         </tr>
         <tr>
             <td>➖Запаздывающее</td>
@@ -93,7 +132,7 @@ enableToc: true
         <tr>
             <td rowspan=2>F. Перспективы</td>
             <td>➕Обозримые</td>
-            <td rowspan=2 >xi.Обучение<br>xii.Отзывы</td>
+            <td rowspan=2 ><nobr>[[tags/Обучение|xi. Обучение]]</nobr><br><nobr>[[tags/Отзывы|xii. Отзывы]]</nobr></td>
         </tr>
         <tr>
             <td>➖Неопределённые</td>
@@ -103,8 +142,9 @@ enableToc: true
 
 Далее по паре фаз определяются слабые места разработки ПО и производится их методическое устранение.
 
-## Мой контакт
+## Контакт
 
-*![Telegram](12%20фаз/Контакт/telegram-icon-blue-angle.png): [@PetaFlops](https://t.me/PetaFlops)*
+![Telegram](12%20фаз/Контакт/telegram-icon-blue-angle.png)
+[@PetaFlops](https://t.me/PetaFlops)
 
 ![https://t.me/PetaFlops](12%20фаз/Контакт/telegram_qrcode.png)
