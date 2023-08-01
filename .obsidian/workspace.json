@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/12 фаз/Методика/Кодирование.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/12 фаз/Методика/Кодирование.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/12 фаз/Методика/Кодирование.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/_index.md"
+                "file": "content/12 фаз/Методика/Кодирование.md"
               }
             }
           }
@@ -149,12 +149,16 @@
   },
   "active": "b2f7f30e66028181",
   "lastOpenFiles": [
-    "content/12 фаз/Методика/Выпуск.md",
     "content/_index.md",
-    "content/12 фаз/Методика/Доставка.md",
-    "content/12 фаз/Методика/Формализация.md",
-    "content/12 фаз/Методика/Испытания.md",
     "content/12 фаз/Методика/Сборка.md",
+    "content/12 фаз/Методика/Испытания.md",
+    "content/12 фаз/Методика/Выпуск.md",
+    "content/12 фаз/Методика/Доставка.md",
+    "content/12 фаз/Методика/Эксплуатация.md",
+    "content/12 фаз/Методика/Мониторинг.md",
+    "content/12 фаз/Методика/Обучение.md",
+    "content/12 фаз/Методика/Отзывы.md",
+    "content/12 фаз/Методика/Формализация.md",
     "content/12 фаз/Методика/Кодирование.md",
     "content/12 фаз/Методика/Планирование.md",
     "content/12 фаз/Методика/Проектирование.md",
