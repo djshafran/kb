@@ -20,10 +20,10 @@ other = "showing first 10 results"
 other = "Метка"
 
 [backlinks]
-other = "Backlinks"
+other = "Обратные ссылки"
 
 [no_backlinks]
-other = "No backlinks found"
+other = "Нет обратных ссылок"
 
 [home]
 other = "Главная"
