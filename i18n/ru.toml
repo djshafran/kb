@@ -38,7 +38,7 @@ other = "Тёмная тема"
 other = "Edit Source"
 
 [interactive_graph]
-other = "Граф"
+other = "Навигатор"
 
 [search]
 other = "Поиск"
