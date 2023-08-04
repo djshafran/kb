@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/12 фаз/Методика/Планирование.md",
+                "file": "content/12 фаз/Продвижение/Экнономика и Хрематистика.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/12 фаз/Методика/Планирование.md",
+                "file": "content/12 фаз/Продвижение/Экнономика и Хрематистика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/12 фаз/Методика/Планирование.md",
+                "file": "content/12 фаз/Продвижение/Экнономика и Хрематистика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/12 фаз/Методика/Планирование.md"
+                "file": "content/12 фаз/Продвижение/Экнономика и Хрематистика.md"
               }
             }
           }
@@ -163,8 +163,14 @@
   },
   "active": "5acebaca309dfe56",
   "lastOpenFiles": [
-    "content/12 фаз/Методика/Формализация.md",
     "content/12 фаз/Методика/Планирование.md",
+    "content/12 фаз/Продвижение/Экнономика и Хрематистика.md",
+    "content/12 фаз/Продвижение/круг-фазы-с-экономикой.png",
+    "Экономика или Хрематистика.md",
+    "content/12 фаз/Продвижение/ожидание.jpg",
+    "content/12 фаз/Продвижение/выход.jpg",
+    "content/12 фаз/Продвижение/реальность.jpg",
+    "content/12 фаз/Методика/Формализация.md",
     "content/12 фаз/Методика/Кодирование.md",
     "content/_index.md",
     "content/12 фаз/Методика/Сборка.md",
@@ -198,9 +204,6 @@
     "content/12_фаз/20.Методика/_index.md",
     "content/12_фаз/20. Методика/__i. Формализация.md",
     "content/12_фаз/20.Методика",
-    "content/12_фаз/20. Методика/_ii. Проектирование.md",
-    "screenshot.png",
-    "content/12_фаз/20. Методика/_index.md",
-    "content/private/private-note.md"
+    "screenshot.png"
   ]
 }
