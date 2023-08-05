@@ -6,6 +6,7 @@ enableLatex: true
 enableCodeBlockTitle: true
 enableCodeBlockCopy: true
 enableCallouts: true
+enableRobotsTXT: true
 enableSPA: true
 enableFooter: true
 enableContextualBacklinks: true
