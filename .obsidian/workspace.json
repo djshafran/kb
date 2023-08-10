@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Продвижение/Готовность и необходимость гибкой разработки.md",
+                "file": "content/Продвижение/Экнономика и Хрематистика в ИТ.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Продвижение/Готовность и необходимость гибкой разработки.md",
+                "file": "content/Продвижение/Экнономика и Хрематистика в ИТ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Продвижение/Готовность и необходимость гибкой разработки.md",
+                "file": "content/Продвижение/Экнономика и Хрематистика в ИТ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Продвижение/Готовность и необходимость гибкой разработки.md"
+                "file": "content/Продвижение/Экнономика и Хрематистика в ИТ.md"
               }
             }
           }
@@ -163,8 +163,8 @@
   },
   "active": "5acebaca309dfe56",
   "lastOpenFiles": [
-    "content/Продвижение/Экнономика и Хрематистика в ИТ.md",
     "content/Продвижение/Готовность и необходимость гибкой разработки.md",
+    "content/Продвижение/Экнономика и Хрематистика в ИТ.md",
     "content/_index.md",
     "layouts/robots.txt",
     "content/12 фаз/Методика/Проектирование.md",
