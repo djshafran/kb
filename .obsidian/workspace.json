@@ -26,8 +26,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/_index.md",
-                "mode": "preview",
+                "file": "content/Продвижение/Экнономика и Хрематистика в ИТ.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/Продвижение/Экнономика и Хрематистика в ИТ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/Продвижение/Экнономика и Хрематистика в ИТ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/_index.md"
+                "file": "content/Продвижение/Экнономика и Хрематистика в ИТ.md"
               }
             }
           }
@@ -163,10 +163,12 @@
   },
   "active": "5acebaca309dfe56",
   "lastOpenFiles": [
+    "content/_index.md",
+    "content/Продвижение/Экнономика и Хрематистика в ИТ.md",
+    "content/Продвижение/Готовность и необходимость гибкой разработки.md",
     "layouts/robots.txt",
     "content/12 фаз/Методика/Проектирование.md",
     "content/12 фаз/Методика/Формализация.md",
-    "content/Продвижение/Экнономика и Хрематистика.md",
     "content/12 фаз/Методика/Планирование.md",
     "content/12 фаз/Продвижение/Экнономика и Хрематистика.md",
     "content/Продвижение/реальность.jpg",
@@ -180,7 +182,6 @@
     "content/12 фаз/Продвижение/выход.jpg",
     "content/12 фаз/Продвижение/реальность.jpg",
     "content/12 фаз/Методика/Кодирование.md",
-    "content/_index.md",
     "content/12 фаз/Методика/Сборка.md",
     "content/12 фаз/Методика/Испытания.md",
     "content/12 фаз/Методика/Выпуск.md",
@@ -207,7 +208,6 @@
     "12_фаз/20.Методика/(ii). Проектирование.md",
     "content/12_фаз/20.Методика/(i).Формализация.md",
     "12_фаз/20.Методика",
-    "12_фаз",
     "content/12_фаз/20.Методика/_index.md"
   ]
 }
