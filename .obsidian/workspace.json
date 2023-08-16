@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Продвижение/Права и обязанности руководителя производства ПО и АПК.md",
+                "file": "content/12 фаз/Методика/Формализация.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Продвижение/Права и обязанности руководителя производства ПО и АПК.md",
+                "file": "content/12 фаз/Методика/Формализация.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Продвижение/Права и обязанности руководителя производства ПО и АПК.md",
+                "file": "content/12 фаз/Методика/Формализация.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Продвижение/Права и обязанности руководителя производства ПО и АПК.md"
+                "file": "content/12 фаз/Методика/Формализация.md"
               }
             }
           }
@@ -161,13 +161,13 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "68d322d4f762652c",
+  "active": "5acebaca309dfe56",
   "lastOpenFiles": [
+    "content/_index.md",
     "content/Продвижение/Экнономика и Хрематистика в ИТ.md",
     "content/Продвижение/Права и обязанности руководителя производства ПО и АПК.md",
     "content/Продвижение/Права и обязанности руководителя производства ПО и АПК",
     "content/Продвижение/Расписание недели руководителя производства ПО и АПК",
-    "content/_index.md",
     "content/Продвижение/Готовность и необходимость гибкой разработки.md",
     "layouts/robots.txt",
     "content/12 фаз/Методика/Проектирование.md",
