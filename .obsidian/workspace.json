@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/12 фаз/Методика/Планирование.md",
+                "file": "content/12 фаз/Методика/Проектирование.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/12 фаз/Методика/Планирование.md",
+                "file": "content/12 фаз/Методика/Проектирование.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/12 фаз/Методика/Планирование.md",
+                "file": "content/12 фаз/Методика/Проектирование.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/12 фаз/Методика/Планирование.md"
+                "file": "content/12 фаз/Методика/Проектирование.md"
               }
             }
           }
@@ -163,16 +163,16 @@
   },
   "active": "5acebaca309dfe56",
   "lastOpenFiles": [
-    "content/12 фаз/Методика/Формализация.md",
     "content/_index.md",
+    "content/12 фаз/Методика/Проектирование.md",
+    "content/12 фаз/Методика/Планирование.md",
+    "content/12 фаз/Методика/Формализация.md",
     "content/Продвижение/Экнономика и Хрематистика в ИТ.md",
     "content/Продвижение/Права и обязанности руководителя производства ПО и АПК.md",
     "content/Продвижение/Права и обязанности руководителя производства ПО и АПК",
     "content/Продвижение/Расписание недели руководителя производства ПО и АПК",
     "content/Продвижение/Готовность и необходимость гибкой разработки.md",
     "layouts/robots.txt",
-    "content/12 фаз/Методика/Проектирование.md",
-    "content/12 фаз/Методика/Планирование.md",
     "content/12 фаз/Продвижение/Экнономика и Хрематистика.md",
     "content/Продвижение/реальность.jpg",
     "content/Продвижение/ожидание.jpg",
