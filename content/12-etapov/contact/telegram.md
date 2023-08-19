@@ -1,1 +1,0 @@
-![https://t.me/petaflops](telegram_qrcode.png)

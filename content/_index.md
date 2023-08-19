@@ -118,7 +118,7 @@ enableToc: true
 
 ## Контакт
 
-![Telegram](telegram-icon-blue-angle.png)
+![Telegram](contact/telegram-icon-blue-angle.png)
 [@PetaFlops](https://t.me/PetaFlops)
 
-![https://t.me/PetaFlops](telegram_qrcode.png)
+![https://t.me/PetaFlops](contact/telegram_qrcode.png)
