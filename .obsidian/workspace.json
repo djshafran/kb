@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/promo/ekonomika-i-hrematistica-v-it.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/promo/ekonomika-i-hrematistica-v-it.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/promo/ekonomika-i-hrematistica-v-it.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/_index.md"
+                "file": "content/promo/ekonomika-i-hrematistica-v-it.md"
               }
             }
           }
@@ -160,10 +160,10 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "68d322d4f762652c",
+  "active": "b2f7f30e66028181",
   "lastOpenFiles": [
-    "content/promo/ekonomika-i-hrematistica-v-it.md",
     "content/_index.md",
+    "content/promo/ekonomika-i-hrematistica-v-it.md",
     "content/12-etapov/metod/formalizatsiya.md",
     "content/12-etapov/contact/telegram.md",
     "Ключи.md",
