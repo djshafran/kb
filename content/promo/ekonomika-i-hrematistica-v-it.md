@@ -30,7 +30,7 @@ weight: -5
         dominant-baseline: middle;
     }
 </style>
-<svg id="main_diagram" width="100%">
+<svg id="main_diagram" width="100%" viewBox="0 0 1200 1200">
 </svg>
 <script>
   document.addEventListener("DOMContentLoaded", function () {

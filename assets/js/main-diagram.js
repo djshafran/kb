@@ -1,6 +1,10 @@
 const drawMainDiagram = () => {
     let svg = document.getElementById("main_diagram");
-    svg.setAttribute("viewBox", "0 0 1200 1200");
+    // svg.setAttribute("viewBox", "0 0 1200 1200");
+    if (svg === null) {
+        console.log('drawMainDiagram cannot find svg with id main_diagram')
+        return(0);
+    }
 
     let center = { x: svg.viewBox.baseVal.width / 2, y: svg.viewBox.baseVal.height / 2 };
     let radius = Math.min(center.x, center.y);
