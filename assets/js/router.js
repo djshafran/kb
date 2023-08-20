@@ -4,6 +4,7 @@ import {
   prefetch,
   router,
 } from "https://unpkg.com/million@1.11.5/dist/router.mjs"
+// #TODO: Так работает, но ругается, что не находит файл. Разбираться с ES6 буду потом
 import { drawMainDiagram } from './main_diagram.js'
 
 export const attachSPARouting = (init, rerender) => {
