@@ -6,7 +6,7 @@ noindex: true
 url: "/ekonomika-v-it"
 date: "2023-08-04"
 lastmod: "2023-08-04"
-og_image_url: /Продвижение/круг-фазы-с-экономикой.png
+og_image_url: promo/krug-etapov-s-ekonomikoy.png
 tags:
 - Экономика
 description: | 
