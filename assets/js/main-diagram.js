@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-
+const drawMainDiagram = () => {
     let svg = document.getElementById("main_diagram");
 
     let center = { x: svg.viewBox.baseVal.width / 2, y: svg.viewBox.baseVal.height / 2 };
@@ -60,5 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
             startAngle += sectionAngle;
         }
     }
+}
 
+document.addEventListener("DOMContentLoaded", function () {
+    drawMainDiagram()
 });
