@@ -1,4 +1,6 @@
-let svg = document.getElementById("main_diagram");
+document.addEventListener("DOMContentLoaded", function () {
+
+    let svg = document.getElementById("main_diagram");
 
     let center = { x: svg.viewBox.baseVal.width / 2, y: svg.viewBox.baseVal.height / 2 };
     let radius = Math.min(center.x, center.y);
@@ -58,3 +60,5 @@ let svg = document.getElementById("main_diagram");
             startAngle += sectionAngle;
         }
     }
+
+});
