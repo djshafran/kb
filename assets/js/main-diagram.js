@@ -66,8 +66,6 @@ const drawMainDiagram = () => {
     }
 }
 
-export { drawMainDiagram }
-
 document.addEventListener("DOMContentLoaded", function () {
     drawMainDiagram()
 });
