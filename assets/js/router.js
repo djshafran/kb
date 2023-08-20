@@ -3,6 +3,7 @@ import {
   navigate,
   prefetch,
   router,
+  main_diagram
 } from "https://unpkg.com/million@1.11.5/dist/router.mjs"
 
 export const attachSPARouting = (init, rerender) => {
@@ -20,6 +21,7 @@ export const attachSPARouting = (init, rerender) => {
     init()
     router(".singlePage")
     render()
+    drawMainDiagram()
   })
   window.addEventListener("million:navigate", render)
 }
