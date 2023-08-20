@@ -1,4 +1,4 @@
-const drawMainDiagram = () => {
+export function drawMainDiagram () {
     let svg = document.getElementById("main_diagram");
     // svg.setAttribute("viewBox", "0 0 1200 1200");
     if (svg === null) {
