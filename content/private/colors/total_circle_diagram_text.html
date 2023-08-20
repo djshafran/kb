@@ -16,12 +16,12 @@
 </head>
 
 <body>
-    <svg width="1200" height="1200" viewBox="0 0 1200 1200">
+    <svg id="main_diagram" width="1200" height="1200" viewBox="0 0 1200 1200">
         <!-- Here our SVG elements will be added -->
     </svg>
 
     <script>
-        let svg = document.querySelector("svg");
+        let svg = document.getElementById("main_diagram");
 
         let center = { x: svg.viewBox.baseVal.width / 2, y: svg.viewBox.baseVal.height / 2 };
         let radius = Math.min(center.x, center.y);
