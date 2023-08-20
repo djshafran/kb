@@ -4,7 +4,7 @@ import {
   prefetch,
   router,
 } from "https://unpkg.com/million@1.11.5/dist/router.mjs"
-import { drawMainDiagram } from main_diagram
+// import { drawMainDiagram } from main_diagram
 
 export const attachSPARouting = (init, rerender) => {
   // Attach SPA functions to the global Million namespace
