@@ -31,7 +31,7 @@ weight: -5
 
         .label-text {
             fill: white;
-            font-size: 20px;
+            font-size: 19px;
             text-anchor: middle;
             dominant-baseline: middle;
         }
