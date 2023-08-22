@@ -52,13 +52,24 @@ const drawMainDiagram = () => {
             let link = document.createElementNS("http://www.w3.org/2000/svg", "a");
             link.setAttributeNS("http://www.w3.org/1999/xlink", "href", layer.links[j]);
 
-            let text = document.createElementNS("http://www.w3.org/2000/svg", "text");
-            text.setAttribute("x", textX);
-            text.setAttribute("y", textY);
-            text.classList.add("label-text");
-            text.textContent = layer.labels[j];
+            let emoji = layer.labels[j].split(' ')[0];
+            let label = layer.labels[j].split(' ').slice(1).join(' ');
 
-            link.appendChild(text);
+            let textIcon = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            textIcon.setAttribute("x", textX);
+            textIcon.setAttribute("y", textY - 15); // сдвиг иконки выше, чтобы он был выше текста
+            textIcon.classList.add("label-icon");
+            textIcon.textContent = emoji;
+
+            let textLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            textLabel.setAttribute("x", textX);
+            textLabel.setAttribute("y", textY + 15);  // сдвиг текста ниже, чтобы он был ниже значка
+            textLabel.classList.add("label-text");
+            textLabel.textContent = label;
+
+            link.appendChild(textIcon);
+            link.appendChild(textLabel);            
+
             svg.appendChild(link);
 
             startAngle += sectionAngle;

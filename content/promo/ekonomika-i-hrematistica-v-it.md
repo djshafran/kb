@@ -23,12 +23,19 @@ weight: -5
 📊 Осознание баланса между стоимостью создания и стоимостью владения - вот ваш ключ к успешным инвестициям.
 
 <style>
-    .label-text {
-        fill: white;
-        font-size: 16px;
-        text-anchor: middle;
-        dominant-baseline: middle;
-    }
+        .label-icon {
+            font-size: 48px;
+            text-anchor: middle;
+            dominant-baseline: middle;
+        }
+
+        .label-text {
+            fill: white;
+            font-size: 20px;
+            text-anchor: middle;
+            dominant-baseline: middle;
+        }
+
 </style>
 <svg id="main_diagram" width="100%" viewBox="0 0 1200 1200">
 </svg>

@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG Diagram</title>
     <style>
+        .label-icon {
+            font-size: 48px;
+            text-anchor: middle;
+            dominant-baseline: middle;
+        }
+
         .label-text {
             fill: white;
-            font-size: 16px;
+            font-size: 20px;
             text-anchor: middle;
             dominant-baseline: middle;
         }
@@ -40,16 +46,31 @@
         // ];
 
         let layers = [
-            { parts: 2, colors: ["#AF6420", "#549695"], labels: ["Dev | CapEx", "Ops | OpEx"], links: ["-", "-"] },
-            { parts: 4, colors: ["#392D75", "#E59F13", "#9FC713", "#0E759F"], labels: ["Распределение", "Производство", "Обмен", "Потребление"], links: ["-", "-", "-", "-"] },
+            { parts: 2, colors: ["#AF6420", "#549695"], labels: [" Dev | CapEx", " Ops | OpEx"], links: ["-", "-"] },
+            // { parts: 2, colors: ["#A6434C", "#6EA14A"], labels: ["Dev | CapEx", "Ops | OpEx"], links: ["-", "-"] },
+            // { parts: 2, colors: ["#9E475C", "#7CA663"], labels: ["Dev | CapEx", "Ops | OpEx"], links: ["-", "-"] },
+            // { parts: 2, colors: ["#C28C9C", "#B3CDB2"], labels: ["Dev | CapEx", "Ops | OpEx"], links: ["-", "-"] }, //пастельный
+            // { parts: 4, colors: ["#392D75", "#E59F13", "#9FC713", "#0E759F"], labels: ["Распределение", "Производство", "Обмен", "Потребление"], links: ["-", "-", "-", "-"] },
+            // { parts: 4, colors: ["#672771", "#E55F28", "#CBC90E", "#107987"], labels: ["Распределение", "Производство", "Обмен", "Потребление"], links: ["-", "-", "-", "-"] },
+            // { parts: 4, colors: ["#68317F", "#D45E38", "#D0C530", "#278697"], labels: ["Распределение", "Производство", "Обмен", "Потребление"], links: ["-", "-", "-", "-"] },
+            { parts: 4, colors: ["#9D7BAA", "#E89D8E", "#E5E0A3", "#82BAC1"], labels: [" Распределение", " Производство", " Обмен", " Потребление"], links: ["-", "-", "-", "-"] }, //пастельный
             {
-                parts: 12, colors: ["#602980", "#9C1A55", "#C12020", "#D75020", "#FA9C20", "#FFCC20", "#FFEA20", "#80BE00", "#12A050", "#1E72B0", "#0150A0", "#342D90"],
-                labels: ["📝Формализация", "📐Проектирование", "📅Планирование", "⌨️Кодирование", "🔧 Сборка", "🐞Испытания", "🚀 Выпуск", "🚚 Поставка", "🤖 Эксплуатация", "🖥️Мониторинг", "📚 Обучение", "✍️ Отзывы"],
+                // parts: 12, colors: ["#602980", "#9C1A55", "#C12020", "#D75020", "#FA9C20", "#FFCC20", "#FFEA20", "#80BE00", "#12A050", "#1E72B0", "#0150A0", "#342D90"],
+                // parts: 12, colors: ["#6F3A8A", "#9B1854", "#D22A30", "#E55A2F", "#F8991B", "#FECB10", "#F8E01A", "#6DB000", "#12A04A", "#1D71AC", "#025BA0", "#2B2575"],
+                parts: 12, colors: ["#6E3888", "#A52A5A", "#B23528", "#E85E40", "#F8991B", "#FFD700", "#E9E05C", "#8A9A34", "#31B067", "#2D78B5", "#186BAA", "#25319D"],
+                // parts: 12, colors: ["#A47CB2", "#C77D8F", "#D37B75", "#F2A49F", "#F3B897", "#FFECB5", "#F4EB9E", "#BEC997", "#7FD5A6", "#92B7D8", "#75A2C7", "#6C7ABD"], //пастельный
+                labels: ["📝 Формализация", "📐 Проектирование", "📅 Планирование", "⌨️ Кодирование", "🔧 Сборка", "🐞 Испытания", "🚀 Выпуск", "🚚 Поставка", "🤖 Эксплуатация", "🖥️ Мониторинг", "📚 Обучение", "✍️ Отзывы"],
                 links: ["https://petaflops.guru/metod/12-etapov/formalizatsiya", "https://petaflops.guru/metod/12-etapov/proektirovanie", "https://petaflops.guru/metod/12-etapov/planirovanie", "https://petaflops.guru/metod/12-etapov/codirovanie", "https://petaflops.guru/metod/12-etapov/sborka", "https://petaflops.guru/metod/12-etapov/ispitaniya", "https://petaflops.guru/metod/12-etapov/vipusk", "https://petaflops.guru/metod/12-etapov/postavka", "https://petaflops.guru/metod/12-etapov/ekspluatatsiya", "https://petaflops.guru/metod/12-etapov/monitoring", "https://petaflops.guru/metod/12-etapov/obuchenie", "https://petaflops.guru/metod/12-etapov/otzivi"]
             },
-            { parts: 6, colors: ["#7C4087", "#D63420", "#FFB71F", "#FFD710", "#149C78", "#1B3CA4"], labels: ["📌Задачи", "🕒 Сроки", "🚦Качество", "🔄Обновления", "🎖️Реагирование", "🌟Перспективы"], links: ["-", "-", "-", "-", "-", "-"] },
+            // { parts: 6, colors: ["#7C4087", "#D63420", "#FFB71F", "#FFD710", "#149C78", "#1B3CA4"], labels: ["📌Задачи", "🕒 Сроки", "🚦Качество", "🔄Обновления", "🎖️Реагирование", "🌟Перспективы"], links: ["-", "-", "-", "-", "-", "-"] },
+            // { parts: 6, colors: ["#85296F", "#DB422F", "#FBB215", "#B2C80D", "#17887B", "#16408A"], labels: ["📌Задачи", "🕒 Сроки", "🚦Качество", "🔄Обновления", "🎖️Реагирование", "🌟Перспективы"], links: ["-", "-", "-", "-", "-", "-"] },
+            // { parts: 6, colors: ["#893171", "#CD4934", "#F1B021", "#B9BD48", "#2F948E", "#1E4EA3"], labels: ["📌Задачи", "🕒 Сроки", "🚦Качество", "🔄Обновления", "🎖️Реагирование", "🌟Перспективы"], links: ["-", "-", "-", "-", "-", "-"] },
+            { parts: 6, colors: ["#B57CA0", "#E28F8A", "#F9D2A6", "#D9DA9A", "#88C6BF", "#708EC2"], labels: ["📌 Задачи", "🕒 Сроки", "🚦 Качество", "🔄 Обновления", "🎖️ Реагирование", "🌟 Перспективы"], links: ["-", "-", "-", "-", "-", "-"] }, //пастельный
 
-            { parts: 3, colors: ["#602980", "#FA9C20", "#1E72B0"], labels: ["📉Дешевле", "💎Лучше", "🏆Быстрее"], links: ["-", "-", "-"] },
+            { parts: 3, colors: ["#602980", "#FA9C20", "#1E72B0"], labels: ["📉 Дешевле", "💎 Лучше", "🏆 Быстрее"], links: ["-", "-", "-"] },
+            // { parts: 3, colors: ["#B0354F", "#D6BD11", "#176482"], labels: ["📉Дешевле", "💎Лучше", "🏆Быстрее"], links: ["-", "-", "-"] },
+            // { parts: 3, colors: ["#AB3D52", "#D5B634", "#267198"], labels: ["📉Дешевле", "💎Лучше", "🏆Быстрее"], links: ["-", "-", "-"] },
+            // { parts: 3, colors: ["#CC8695", "#E9D6A0", "#7CAAC0"], labels: ["📉Дешевле", "💎Лучше", "🏆Быстрее"], links: ["-", "-", "-"] }, //пастельный
         ];
 
 
@@ -81,13 +102,24 @@
                 let link = document.createElementNS("http://www.w3.org/2000/svg", "a");
                 link.setAttributeNS("http://www.w3.org/1999/xlink", "href", layer.links[j]);
 
-                let text = document.createElementNS("http://www.w3.org/2000/svg", "text");
-                text.setAttribute("x", textX);
-                text.setAttribute("y", textY);
-                text.classList.add("label-text");
-                text.textContent = layer.labels[j];
+                let emoji = layer.labels[j].split(' ')[0];
+                let label = layer.labels[j].split(' ').slice(1).join(' ');
 
-                link.appendChild(text);
+                let textIcon = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                textIcon.setAttribute("x", textX);
+                textIcon.setAttribute("y", textY - 15); // сдвиг иконки выше, чтобы он был выше текста
+                textIcon.classList.add("label-icon");
+                textIcon.textContent = emoji;
+
+                let textLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                textLabel.setAttribute("x", textX);
+                textLabel.setAttribute("y", textY + 15);  // сдвиг текста ниже, чтобы он был ниже значка
+                textLabel.classList.add("label-text");
+                textLabel.textContent = label;
+
+                link.appendChild(textIcon);
+                link.appendChild(textLabel);
+
                 svg.appendChild(link);
 
                 startAngle += sectionAngle;
