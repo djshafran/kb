@@ -1,5 +1,8 @@
 .DEFAULT_GOAL := serve
 
+# Default Hugo version used when none is provided via the environment
+HUGO_VERSION ?= 0.115.3
+
 help: ## Show all Makefile targets
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
@@ -13,7 +16,7 @@ update: ## Update Quartz to the latest version on Github
 
 update-force: ## Forcefully pull all changes and don't ask to patch
 	which go
-	go install -tags extended github.com/gohugoio/hugo@latest
+	go install -tags extended github.com/gohugoio/hugo@v$(HUGO_VERSION)
 	hugo version
 	go install github.com/jackyzha0/hugo-obsidian@latest
 	hugo version
