@@ -1,6 +1,5 @@
 baseURL = "https://petaflops.guru/"
 enableRobotsTXT = true
-theme = "aether"
 languageCode = "ru"
 DefaultContentLanguage = "ru"
 relativeURLs = false
