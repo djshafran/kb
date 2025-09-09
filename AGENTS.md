@@ -67,4 +67,5 @@ No further problems observed.
 Инструкции из вложенных файлов AGENTS.md имеют приоритет над текущим.
 
 # Проверяй битые ссылки перед публикацией pull request и исправляй
-npm run link-check
+запускай quartz `nohup npx quartz build --serve &`
+и проверяй `npm run link-check`
