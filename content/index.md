@@ -20,7 +20,7 @@ og_image_url: /promo/krug-etapov-s-ekonomikoy.png
 - Быстрая реакция.  
 - Обозримые планы.
 
-[Смотреть 12 шагов →](/12 шагов) · [Пройти самооценку →](/samodiagnostika) · [Экономика в ИТ →](/ekonomika-v-it)
+[Смотреть 12 шагов →](/12%20шагов) · [Пройти самооценку →](/samodiagnostika) · [Экономика в ИТ →](/ekonomika-v-it)
 
 ---
 
