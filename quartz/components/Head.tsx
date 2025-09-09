@@ -61,6 +61,7 @@ export default (() => {
         <meta name="twitter:description" content={description} />
         <meta property="og:description" content={description} />
         <meta property="og:image:alt" content={description} />
+        <meta name="yandex-verification" content="084918a540eb0f3e" />
 
         {!usesCustomOgImage && (
           <>
