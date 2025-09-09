@@ -1,6 +1,3 @@
-@use "./syntax.scss";
-@use "./callouts.scss";
-
 /* ==========================================================================
    Quartz v4 — Elegant Light/Dark theme add‑on (custom.scss)
    - Цветовые токены через CSS variables
@@ -11,6 +8,8 @@
 /* (1) Быстрый вариант подключения шрифтов через Google Fonts.
        Для self-host замените блок на @font-face ниже. */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import "./syntax.scss";
+@import "./callouts.scss";
 
 /* (1a) Пример self-host (поместите файлы в quartz/static/fonts/):
 @font-face {
