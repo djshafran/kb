@@ -6,3 +6,10 @@ content/.obsidian
 # assets/indices/linkIndex.json
 # assets/indices/contentIndex.json
 linkmap
+node_modules
+prof
+tsconfig.tsbuildinfo
+.quartz-cache
+private/
+.replit
+replit.nix

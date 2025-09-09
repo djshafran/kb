@@ -1,36 +1,4 @@
 [build]
 
-command = "make update-force"
+command = "npx quartz build"
 publish = "public"
-
-[context.production.environment]
-HUGO_VERSION = "0.115.3"
-HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "true"
-
-[context.split1]
-command = "hugo --gc --minify --enableGitInfo"
-
-[context.split1.environment]
-HUGO_VERSION = "0.115.3"
-HUGO_ENV = "production"
-
-[context.deploy-preview]
-comand = "make serve"
-
-[context.deploy-preview.environment]
-HUGO_VERSION = "0.115.3"
-
-[context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
-
-[context.branch-deploy.environment]
-HUGO_VERSION = "0.115.3"
-
-[context.next.environment]
-HUGO_ENABLEGITINFO = "true"
-
-[[redirects]]
-from = "/npmjs/*"
-to = "/npmjs/"
-status = 200
