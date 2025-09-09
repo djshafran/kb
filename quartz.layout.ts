@@ -4,7 +4,9 @@ import * as Component from "./quartz/components"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [
+    Component.AnalyticsYandex(),
+  ],
   afterBody: [
       Component.ConditionalRender({
       component: Component.MainDiagramLoader(),

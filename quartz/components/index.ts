@@ -24,9 +24,11 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import MainDiagramLoader from "./MainDiagramLoader"
+import AnalyticsYandex from "./AnalyticsYandex"
 
 
 export {
+  AnalyticsYandex,
   MainDiagramLoader,
   ArticleTitle,
   Content,
