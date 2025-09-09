@@ -28,24 +28,9 @@ og_image_url: /Статьи/krug-etapov-s-ekonomikoy.png
 
 Руководителям, командам и инвесторам.  
 Метод помогает согласовать цели, снять риски и ускорить поставки.
-
-<style>
-        .label-icon {
-            font-size: 48px;
-            text-anchor: middle;
-            dominant-baseline: middle;
-        }
-        .label-text {
-            fill: white;
-            font-size: 19px;
-            text-anchor: middle;
-            dominant-baseline: middle;
-        }
-</style>
 <div style="height:480px">
   <svg id="main_diagram" width="100%" height="100%" preserveAspectRatio="xMidYMid meet"></svg>
 </div>
-
 ---
 
 ## Быстрый старт
@@ -54,7 +39,7 @@ og_image_url: /Статьи/krug-etapov-s-ekonomikoy.png
    [Начать самооценку →](/самодиагностика)
 
 2. **Выберите фокус**: какой шаг цикла закрыть первым — задачи, сроки или качество.  
-   [Перейти к 12 шагам →](/12 шагов)
+   [Перейти к 12 шагам →](/12-шагов)
 
 3. **Посчитайте выгоду**: где снижаем CapEx/OpEx и повышаем ROI.  
    [Посмотреть расчёты →](/ekonomika-v-it)
@@ -65,6 +50,4 @@ og_image_url: /Статьи/krug-etapov-s-ekonomikoy.png
 
 Нужна подсказка, с чего начать? Напишите в Telegram:  
 [**@PetaFlops**](https://t.me/PetaFlops)
-[![Мой Telegram QR-код](telegram_qrcode.png)](https://t.me/PetaFlops)
-[https://t.me/PetaFlops](https://t.me/PetaFlops)
 
