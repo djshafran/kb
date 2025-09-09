@@ -1,4 +1,24 @@
 @use "./base.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+/* (1) Быстрый вариант подключения шрифтов через Google Fonts.
+       Для self-host замените блок на @font-face ниже. */
+/* (1a) Пример self-host (поместите файлы в quartz/static/fonts/):
+@font-face {
+  font-family: "Inter Var";
+  src: url("/static/fonts/Inter-Variable.woff2") format("woff2-variations");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora Var";
+  src: url("/static/fonts/Lora-Variable.woff2") format("woff2-variations");
+  font-weight: 400 700;
+  font-style: normal italic;
+  font-display: swap;
+}
+*/
 
 // put your custom CSS here!
 .label-icon {
@@ -19,27 +39,6 @@
    - Надёжные селекторы: html[saved-theme="..."]
    - Минимально инвазивные стили поверх базовой темы
    ========================================================================== */
-
-/* (1) Быстрый вариант подключения шрифтов через Google Fonts.
-       Для self-host замените блок на @font-face ниже. */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
-
-/* (1a) Пример self-host (поместите файлы в quartz/static/fonts/):
-@font-face {
-  font-family: "Inter Var";
-  src: url("/static/fonts/Inter-Variable.woff2") format("woff2-variations");
-  font-weight: 300 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Lora Var";
-  src: url("/static/fonts/Lora-Variable.woff2") format("woff2-variations");
-  font-weight: 400 700;
-  font-style: normal italic;
-  font-display: swap;
-}
-*/
 
 /* (2) Дизайн‑токены по умолчанию */
 :root {
