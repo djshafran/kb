@@ -29,6 +29,7 @@ og_image_url: /Статьи/krug-etapov-s-ekonomikoy.png
 <div style="height:480px">
   <svg id="main_diagram" width="100%" height="100%" preserveAspectRatio="xMidYMid meet"></svg>
 </div>
+
 ---
 
 ## Быстрый старт
