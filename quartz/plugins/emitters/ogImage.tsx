@@ -113,7 +113,12 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       const cfg = ctx.cfg.configuration
       const headerFont = cfg.theme.typography.header
       const bodyFont = cfg.theme.typography.body
-      const fonts = await getSatoriFonts(headerFont, bodyFont)
+try {
+  const fonts = await getSatoriFonts(headerFont, bodyFont)
+} catch (err) {
+  console.error('CustomOgImages: skipped OG image generation:', err);
+  // IMPORTANT: don't rethrow — allow the rest of the build to continue
+}
 
       for (const [_tree, vfile] of content) {
         if (vfile.data.frontmatter?.socialImage !== undefined) continue
