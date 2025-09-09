@@ -1,31 +1,279 @@
-// Add your own CSS here!
+/* ==========================================================================    Quartz v4 — Elegant Light/Dark theme add‑on (custom.scss)    - Цветовые токены через CSS variables    - Надёжные селекторы: html[saved-theme="..."]    - Минимально инвазивные стили поверх базовой темы    ========================================================================== */
 
+/* (1) Быстрый вариант подключения шрифтов через Google Fonts.
+       Для self-host замените блок на @font-face ниже. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+/* (1a) Пример self-host (поместите файлы в quartz/static/fonts/):
+@font-face {
+  font-family: "Inter Var";
+  src: url("/static/fonts/Inter-Variable.woff2") format("woff2-variations");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora Var";
+  src: url("/static/fonts/Lora-Variable.woff2") format("woff2-variations");
+  font-weight: 400 700;
+  font-style: normal italic;
+  font-display: swap;
+}
+*/
+
+/* (2) Дизайн‑токены по умолчанию */
 :root {
-  --light: #faf8f8;
-  --dark: #141021;
-  --secondary: #284b63;
-  --tertiary: #84a59d;
-  --visited: #afbfc9;
-  --primary: #f28482;
-  --gray: #4e4e4e;
-  --lightgray: #f0f0f0;
-  --outlinegray: #dadada;
-  --million-progress-bar-color: var(--secondary);
-  --highlighted: #f5dfaf88;
+  /* Семейства шрифтов */
+  --font-sans: "Inter", "Inter Var", system-ui, -apple-system, "Segoe UI", Roboto,
+               "Noto Sans", "Helvetica Neue", Arial, "Apple Color Emoji",
+               "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-serif: "Lora", "Lora Var", Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+               "Liberation Mono", "Courier New", monospace;
+
+  /* Радиусы и тени */
+  --radius-sm: 10px;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --shadow-1: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.05);
+  --shadow-2: 0 2px 8px rgba(0,0,0,.08), 0 16px 40px rgba(0,0,0,.06);
+
+  /* Интерлиньяж и плотности */
+  --leading: 1.7;
+  --maxw-text: 75ch; /* комфортная ширина текста */
 }
 
-[saved-theme="dark"] {
-  --light: #1e1e21 !important;
-  --dark: #fbfffe !important;
-  --secondary: #6b879a !important;
-  --visited: #4a575e !important;
-  --tertiary: #84a59d !important;
-  --primary: #f58382 !important;
-  --gray: #d4d4d4 !important;
-  --lightgray: #292633 !important;
-  --outlinegray: #343434 !important;
-  --highlighted: #574010;
+/* (3) Палитры тем через плейсхолдеры (SCSS) */
+%theme-light {
+  /* Тёплые нейтралы + яркие акценты (в тренде‑2025):contentReference[oaicite:4]{index=4} */
+  --bg:            #f8f6f3; /* тёплый off‑white */
+  --surface:       #ffffff;
+  --surface-2:     #f3eee6;
+  --text:          #14110f;
+  --muted:         #6b625b;
+  --border:        #e8e2da;
+
+  /* Бренд и ссылки */
+  --brand:         #8b5d3b; /* «mocha»-тёплый */
+  --brand-contrast:#ffffff;
+  --link:          #175cd3; /* доступный синий */
+  --link-hover:    #0b4cbf;
+
+  /* Акценты и коды */
+  --accent-1:      #ffe2bd;
+  --accent-2:      #ff8e6e;
+  --code-bg:       #f5efe7;
+  --code-text:     #1f2937;
+
+  /* Callouts */
+  --callout-note-bg:   #f0f7ff;
+  --callout-note-bd:   #8bb8ff;
+  --callout-tip-bg:    #eef7f2;
+  --callout-tip-bd:    #8bd19a;
+
+  /* Selection */
+  --selection:     #fde6c9;
 }
 
+%theme-dark {
+  /* Умеренно тёмная палитра + тёплые акценты (актуально в 2025):contentReference[oaicite:5]{index=5} */
+  --bg:            #0f1115;
+  --surface:       #15191e;
+  --surface-2:     #0f1317;
+  --text:          #e9e9e9;
+  --muted:         #a8b0bb;
+  --border:        #2b2f36;
 
+  --brand:         #d1a87a;
+  --brand-contrast:#1a1a1a;
+  --link:          #8ab4ff;
+  --link-hover:    #a4c2ff;
 
+  --accent-1:      #3d2a1a;
+  --accent-2:      #6e2e21;
+  --code-bg:       #0e1420;
+  --code-text:     #d6e2ff;
+
+  --callout-note-bg:   #0f1a2b;
+  --callout-note-bd:   #3f6ecf;
+  --callout-tip-bg:    #0e1f16;
+  --callout-tip-bd:    #2e7d50;
+
+  --selection:     #233555;
+}
+
+/* (4) Применение палитр.
+   Quartz Darkmode выставляет html[saved-theme="light" | "dark"] */
+html[saved-theme="light"] { @extend %theme-light; }
+html[saved-theme="dark"]  { @extend %theme-dark; }
+
+/* Fallback, если saved-theme ещё нет — уважаем системное предпочтение */
+@media (prefers-color-scheme: dark) {
+  :root:not([saved-theme]) { @extend %theme-dark; }
+}
+@media (prefers-color-scheme: light) {
+  :root:not([saved-theme]) { @extend %theme-light; }
+}
+
+/* ==========================================================================
+   БАЗОВАЯ ТИПОГРАФИКА И КОМПОНЕНТЫ
+   ========================================================================== */
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: var(--leading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main, .page, .content {
+  max-width: var(--maxw-text);
+  margin-inline: auto;
+}
+
+/* Заголовки — элегантная засечковая гарнитура (тренд контрастных пар serif+sans):contentReference[oaicite:7]{index=7} */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  letter-spacing: 0.01em;
+  color: var(--text);
+}
+h1 { font-weight: 700; line-height: 1.2; margin: 1.2em 0 .4em; }
+h2 { font-weight: 700; line-height: 1.25; margin: 1.2em 0 .5em; }
+h3 { font-weight: 600; line-height: 1.3; margin: 1.1em 0 .5em; }
+
+/* Параграфы/списки */
+p { margin: .85rem 0; }
+ul, ol { padding-inline-start: 1.2rem; }
+li + li { margin-top: .25rem; }
+
+/* Ссылки — премиальная подчеркивание/цвета */
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .18em;
+  transition: color .15s ease, text-decoration-color .15s ease, background-size .2s ease;
+}
+a:hover {
+  color: var(--link-hover);
+  text-decoration-color: currentColor;
+}
+
+/* Кнопко‑ссылки и <button> — мягкие радиусы и тёплый бренд */
+button, .btn, a[role="button"] {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--brand);
+  color: var(--brand-contrast);
+  padding: .55rem .9rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+  font-weight: 600;
+}
+button:hover, .btn:hover, a[role="button"]:hover {
+  filter: saturate(1.05) brightness(1.02);
+}
+button:focus-visible, .btn:focus-visible, a[role="button"]:focus-visible, a:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--link) 60%, transparent);
+  outline-offset: 2px;
+  border-radius: var(--radius);
+}
+
+/* Тумблер тёмной темы (в Quartz это checkbox с id=darkmode-toggle) */
+#darkmode-toggle {
+  accent-color: var(--brand);
+}
+
+/* Блок‑цитаты */
+blockquote {
+  margin: 1rem 0;
+  padding: .85rem 1rem;
+  background: color-mix(in oklab, var(--surface) 85%, var(--brand) 15%);
+  border-left: 3px solid var(--brand);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+/* Код */
+code, kbd, pre, samp { font-family: var(--font-mono); }
+code {
+  background: var(--code-bg);
+  color: var(--code-text);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 4px);
+  padding: .12rem .35rem;
+}
+pre {
+  background: var(--code-bg);
+  color: var(--code-text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .9rem 1rem;
+  overflow: auto;
+  box-shadow: var(--shadow-1);
+}
+pre code { border: 0; padding: 0; background: transparent; }
+
+/* Таблицы */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+thead th {
+  background: var(--surface-2);
+  font-weight: 700;
+}
+td, th {
+  padding: .6rem .7rem;
+  border-bottom: 1px solid var(--border);
+}
+tbody tr:nth-child(2n) {
+  background: color-mix(in oklab, var(--surface) 92%, black 8%);
+}
+
+/* Списки задач */
+input[type="checkbox"] { accent-color: var(--brand); }
+
+/* Подсветка выделения */
+::selection {
+  background: var(--selection);
+}
+
+/* Карточные/вспомогательные контейнеры (побочный тонкий слой «премиальности») */
+.card, .popover, .search-panel, .aside, .callout {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+}
+
+/* Callouts: базовый тон + два примера переопределений.
+   Quartz позволяет задавать цвета callout’ов прямо в custom.scss */
+.callout { --color: var(--text); --border: var(--border); --bg: var(--surface); }
+.callout[data-callout="note"] {
+  --color: var(--text);
+  --border: var(--callout-note-bd);
+  --bg: var(--callout-note-bg);
+}
+.callout[data-callout="tip"] {
+  --color: var(--text);
+  --border: var(--callout-tip-bd);
+  --bg: var(--callout-tip-bg);
+}
+
+/* Блоки с ярким контрастом (акцентные секции). Вдохновлено трендом «контрастных блоков»:contentReference[oaicite:9]{index=9} */
+.section-contrast {
+  background: linear-gradient(180deg, var(--surface) 0%, color-mix(in oklab, var(--surface-2) 70%, var(--brand) 30%) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: clamp(1rem, 3vw, 2rem);
+  box-shadow: var(--shadow-2);
+}
+
+/* Мелкие микровзаимодействия без перегруза: более «премиальные» hover‑состояния */
+a, button, .btn { transition: background-color .2s, color .2s, filter .2s, transform .08s; }
+button:active, .btn:active { transform: translateY(1px); }
