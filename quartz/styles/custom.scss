@@ -22,7 +22,6 @@
 
 /* (1) Быстрый вариант подключения шрифтов через Google Fonts.
        Для self-host замените блок на @font-face ниже. */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 /* (1a) Пример self-host (поместите файлы в quartz/static/fonts/):
 @font-face {
@@ -63,8 +62,8 @@
   --maxw-text: 75ch; /* комфортная ширина текста */
 }
 
-/* (3) Палитры тем через плейсхолдеры (SCSS) */
-%theme-light {
+/* (3) Палитры тем через миксины (SCSS) */
+@mixin theme-light {
   /* Тёплые нейтралы + яркие акценты (в тренде‑2025):contentReference[oaicite:4]{index=4} */
   --bg:            #f8f6f3; /* тёплый off‑white */
   --surface:       #ffffff;
@@ -95,7 +94,7 @@
   --selection:     #fde6c9;
 }
 
-%theme-dark {
+@mixin theme-dark {
   /* Умеренно тёмная палитра + тёплые акценты (актуально в 2025):contentReference[oaicite:5]{index=5} */
   --bg:            #0f1115;
   --surface:       #15191e;
@@ -124,15 +123,15 @@
 
 /* (4) Применение палитр.
    Quartz Darkmode выставляет html[saved-theme="light" | "dark"] */
-html[saved-theme="light"] { @extend %theme-light; }
-html[saved-theme="dark"]  { @extend %theme-dark; }
+html[saved-theme="light"] { @include theme-light; }
+html[saved-theme="dark"]  { @include theme-dark; }
 
 /* Fallback, если saved-theme ещё нет — уважаем системное предпочтение */
 @media (prefers-color-scheme: dark) {
-  :root:not([saved-theme]) { @extend %theme-dark; }
+  :root:not([saved-theme]) { @include theme-dark; }
 }
 @media (prefers-color-scheme: light) {
-  :root:not([saved-theme]) { @extend %theme-light; }
+  :root:not([saved-theme]) { @include theme-light; }
 }
 
 /* ==========================================================================
