@@ -3,7 +3,7 @@ title: Запускаем ИТ‑продукты быстрее, дешевле
 enableToc: false
 description: ГИПЕР — простой 12‑шаговый процесс для ИТ. Он даёт ясные задачи, точные сроки и высокий стандарт качества.
 mainDiagram: true
-og_image_url: /promo/krug-etapov-s-ekonomikoy.png
+og_image_url: /Статьи/krug-etapov-s-ekonomikoy.png
 ---
 
 ИТ без лишних рисков. С понятным планом.
