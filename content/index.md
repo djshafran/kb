@@ -65,6 +65,6 @@ og_image_url: /promo/krug-etapov-s-ekonomikoy.png
 
 Нужна подсказка, с чего начать? Напишите в Telegram:  
 [**@PetaFlops**](https://t.me/PetaFlops)
-[![Мой Telegram QR-код](contact/telegram_qrcode.png)](https://t.me/PetaFlops)
+[![Мой Telegram QR-код](telegram_qrcode.png)](https://t.me/PetaFlops)
 [https://t.me/PetaFlops](https://t.me/PetaFlops)
 

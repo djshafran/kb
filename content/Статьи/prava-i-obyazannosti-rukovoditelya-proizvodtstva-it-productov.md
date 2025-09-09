@@ -3,7 +3,6 @@ title: "Права и обязанности руководителя произ
 draft: false
 enableToc: false
 noindex: true
-url: "/prava-i-obyazannosti-rukovoditelya-proizvodstva-po-i-apk"
 date: "2023-08-04"
 lastmod: "2023-08-04"
 weight: -5
