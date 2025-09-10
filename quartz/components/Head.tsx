@@ -87,6 +87,11 @@ export default (() => {
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 
+        <script
+          src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+          defer
+        ></script>
+
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")
