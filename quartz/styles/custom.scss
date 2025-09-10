@@ -5,6 +5,7 @@
     font-size: 48px;
     text-anchor: middle;
     dominant-baseline: middle;
+    border: 0px;
 }
 .label-text {
     fill: white;
@@ -12,3 +13,33 @@
     text-anchor: middle;
     dominant-baseline: middle;
 }
+
+/* Пример акцентного блока */
+.section-contrast {
+  background: linear-gradient(
+    180deg,
+    var(--light) 0%,
+    color-mix(in oklab, var(--lightgray) 60%, var(--secondary) 10%) 100%
+  );
+  border: 1px solid var(--lightgray);
+  border-radius: 16px;
+  padding: clamp(1rem, 3vw, 2rem);
+  box-shadow: 0 2px 8px rgba(0,0,0,.08), 0 16px 40px rgba(0,0,0,.06);
+}
+
+/* Заголовки и текст — используем шрифты из темы Quartz */
+h1, h2, h3, h4, h5, h6 { font-family: var(--headerFont); }
+html, body             { font-family: var(--bodyFont);   }
+
+/* Тонкие начертания по умолчанию */
+html, body { font-weight: 300; }
+h1, h2, h3 { font-weight: 300; }
+h4, h5, h6 { font-weight: 300; }
+
+code, kbd, pre, samp { font-family: var(--codeFont); }
+
+/* Пример стилизации ссылок без избыточной специфичности */
+// a { text-decoration: underline; text-underline-offset: .18em; }
+a { font-weight: 300; }
+a:hover { color: --tertiary; }
+// a:hover { text-decoration-color: currentColor; }
