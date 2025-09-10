@@ -12,6 +12,7 @@ export const sharedPageComponents: SharedLayout = {
       component: Component.MainDiagramLoader(),
       condition: ({ fileData }) => !!fileData.frontmatter?.mainDiagram,
     }),
+    Component.ScrollRevealInit(),
   ],
   footer: Component.Footer({
     links: {

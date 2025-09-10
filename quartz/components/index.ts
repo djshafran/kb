@@ -25,10 +25,12 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import MainDiagramLoader from "./MainDiagramLoader"
 import AnalyticsYandex from "./AnalyticsYandex"
+import ScrollRevealInit from "./ScrollRevealInit"
 
 
 export {
   AnalyticsYandex,
+  ScrollRevealInit,
   MainDiagramLoader,
   ArticleTitle,
   Content,
