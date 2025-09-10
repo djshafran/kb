@@ -2,7 +2,8 @@
 
 // put your custom CSS here!
 .label-icon {
-    font-size: 48px;
+    // font-size: 48px;
+    font-size: 0px;
     text-anchor: middle;
     dominant-baseline: middle;
     border: 0px;
@@ -43,6 +44,15 @@ code, kbd, pre, samp { font-family: var(--codeFont); }
 
 /* Пример стилизации ссылок без избыточной специфичности */
 // a { text-decoration: underline; text-underline-offset: .18em; }
-a { font-weight: 300; }
+a { font-weight: 600; }
 a:hover { color: --tertiary; }
 // a:hover { text-decoration-color: currentColor; }
+div.center p > strong{
+  padding-left: 2.25rem;   /* размер отступа для 2-й и далее строк */
+  text-indent:  -2.25rem;   /* выровнять 1-ю строку обратно в ноль */
+//   margin: 0.5rem 0;        /* по желанию */
+}
+// .center p { 
+//   padding-left: -2.25rem;   /* размер отступа для 2-й и далее строк */
+//   text-indent:  2.25rem;   /* выровнять 1-ю строку обратно в ноль */
+//  } 
