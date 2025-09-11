@@ -10,6 +10,6 @@ node_modules
 prof
 tsconfig.tsbuildinfo
 .quartz-cache
-private/
+# private/
 .replit
 replit.nix
