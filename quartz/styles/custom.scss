@@ -56,3 +56,35 @@ div.center p > strong{
 //   padding-left: -2.25rem;   /* размер отступа для 2-й и далее строк */
 //   text-indent:  2.25rem;   /* выровнять 1-ю строку обратно в ноль */
 //  } 
+
+/* Выравниваем текст по ширине и включаем переносы */
+.center p,
+.center li {
+  text-align: justify;
+  text-justify: inter-word; /* поддержка Edge */
+  hyphens: auto;
+  -webkit-hyphens: auto;    /* Safari/iOS */
+  -ms-hyphens: auto;        /* старый Edge/IE */
+}
+
+/* Заголовки, цитаты и моноширинный текст оставляем как есть */
+.center h1,
+.center h2,
+.center h3,
+.center h4,
+.center h5,
+.center h6,
+.center pre,
+.center code,
+.center blockquote figcaption {
+  text-align: left;
+  hyphens: manual;
+}
+
+// /* На очень узких экранах возвращаем левое выравнивание, чтобы избежать рек */
+// @media (max-width: 420px) {
+//   .center p,
+//   .center li {
+//     text-align: left;
+//   }
+// }
