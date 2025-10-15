@@ -89,9 +89,37 @@ export async function fetchTtf(
   }
 
   // Get css file from google fonts
-  const cssResponse = await fetch(
-    `https://fonts.googleapis.com/css2?family=${fontName}:wght@${weight}`,
-  )
+  let cssResponse: Response
+  try {
+    cssResponse = await fetch(
+      `https://fonts.googleapis.com/css2?family=${fontName}:wght@${weight}&subset=latin,cyrillic`,
+      {
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0 (compatible; QuartzOG/1.0; +https://github.com/jackyzha0/quartz)",
+        },
+      },
+    )
+  } catch (error) {
+    console.log(
+      styleText(
+        "yellow",
+        `\nWarning: Failed to reach Google Fonts for ${rawFontName} ${weight}: ${String(error)}`,
+      ),
+    )
+    return
+  }
+
+  if (!cssResponse.ok) {
+    console.log(
+      styleText(
+        "yellow",
+        `\nWarning: Failed to fetch font ${rawFontName} with weight ${weight}, got ${cssResponse.status} ${cssResponse.statusText}`,
+      ),
+    )
+    return
+  }
+
   const css = await cssResponse.text()
 
   // Extract .ttf url from css file
@@ -109,7 +137,33 @@ export async function fetchTtf(
   }
 
   // fontData is an ArrayBuffer containing the .ttf file data
-  const fontResponse = await fetch(match[1])
+  let fontResponse: Response
+  try {
+    fontResponse = await fetch(match[1], {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (compatible; QuartzOG/1.0; +https://github.com/jackyzha0/quartz)",
+      },
+    })
+  } catch (error) {
+    console.log(
+      styleText(
+        "yellow",
+        `\nWarning: Failed to download font file for ${rawFontName} ${weight}: ${String(error)}`,
+      ),
+    )
+    return
+  }
+
+  if (!fontResponse.ok) {
+    console.log(
+      styleText(
+        "yellow",
+        `\nWarning: Failed to download font file for ${rawFontName} ${weight}, got ${fontResponse.status} ${fontResponse.statusText}`,
+      ),
+    )
+    return
+  }
   const fontData = Buffer.from(await fontResponse.arrayBuffer())
   await fs.mkdir(cacheDir, { recursive: true })
   await fs.writeFile(cachePath, fontData)

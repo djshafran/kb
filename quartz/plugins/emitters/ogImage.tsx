@@ -111,9 +111,19 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
     },
     async *emit(ctx, content, _resources) {
       const cfg = ctx.cfg.configuration
-      const headerFont = cfg.theme.typography.header
-      const bodyFont = cfg.theme.typography.body
-      const fonts = await getSatoriFonts(headerFont, bodyFont)
+      const fonts = await getSatoriFonts(
+        { name: "Schibsted Grotesk", weights: [600, 700] },
+        { name: "Source Sans Pro", weights: [400, 600] },
+      )
+      if (fonts.length === 0) {
+        console.warn(
+          styleText(
+            "yellow",
+            "Warning: Skipping OG generation because required fonts could not be loaded.",
+          ),
+        )
+        return
+      }
 
       for (const [_tree, vfile] of content) {
         if (vfile.data.frontmatter?.socialImage !== undefined) continue
@@ -122,9 +132,19 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
     },
     async *partialEmit(ctx, _content, _resources, changeEvents) {
       const cfg = ctx.cfg.configuration
-      const headerFont = cfg.theme.typography.header
-      const bodyFont = cfg.theme.typography.body
-      const fonts = await getSatoriFonts(headerFont, bodyFont)
+      const fonts = await getSatoriFonts(
+        { name: "Schibsted Grotesk", weights: [600, 700] },
+        { name: "Source Sans Pro", weights: [400, 600] },
+      )
+      if (fonts.length === 0) {
+        console.warn(
+          styleText(
+            "yellow",
+            "Warning: Skipping OG generation because required fonts could not be loaded.",
+          ),
+        )
+        return
+      }
 
       // find all slugs that changed or were added
       for (const changeEvent of changeEvents) {
