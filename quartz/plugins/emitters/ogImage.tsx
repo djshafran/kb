@@ -173,12 +173,21 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
                 : `https://${baseUrl}/static/${userDefinedOgImagePath}`
             }
 
-            const generatedOgImagePath = isRealFile
+            const generatedOgImageBasePath = isRealFile
               ? `https://${baseUrl}/${pageData.slug!}-og-image.webp`
               : undefined
+            const versionToken = generatedOgImageBasePath
+              ? computeVersionToken(pageData)
+              : undefined
+            const generatedOgImagePath =
+              generatedOgImageBasePath && versionToken
+                ? appendVersionQuery(generatedOgImageBasePath, versionToken)
+                : generatedOgImageBasePath
             const defaultOgImagePath = `https://${baseUrl}/static/og-image.png`
             const ogImagePath = userDefinedOgImagePath ?? generatedOgImagePath ?? defaultOgImagePath
-            const ogImageMimeType = `image/${getFileExtension(ogImagePath) ?? "png"}`
+            const ogImageMimeType = `image/${
+              getFileExtension(stripQueryParameters(ogImagePath)) ?? "png"
+            }`
             return (
               <>
                 {!userDefinedOgImagePath && (
@@ -199,4 +208,59 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       }
     },
   }
+}
+
+function computeVersionToken(fileData: QuartzPluginData): string | undefined {
+  const dates = fileData.dates as
+    | {
+        modified?: unknown
+        created?: unknown
+        published?: unknown
+      }
+    | undefined
+
+  const timestamp =
+    extractTimestamp(dates?.modified) ??
+    extractTimestamp(dates?.published) ??
+    extractTimestamp(dates?.created)
+
+  if (timestamp) {
+    return timestamp
+  }
+
+  const description = fileData.description as string | undefined
+  if (description) {
+    return description.length.toString()
+  }
+
+  const slug = fileData.slug as string | undefined
+  return slug?.length ? slug.length.toString() : undefined
+}
+
+function extractTimestamp(value: unknown): string | undefined {
+  if (value instanceof Date) {
+    return value.getTime().toString()
+  }
+
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return Math.trunc(value).toString()
+  }
+
+  if (typeof value === "string") {
+    const parsed = Date.parse(value)
+    if (!Number.isNaN(parsed)) {
+      return parsed.toString()
+    }
+  }
+
+  return undefined
+}
+
+function appendVersionQuery(url: string, version: string): string {
+  const separator = url.includes("?") ? "&" : "?"
+  return `${url}${separator}v=${encodeURIComponent(version)}`
+}
+
+function stripQueryParameters(url: string): string {
+  return url.split("?")[0] ?? url
 }
